@@ -1,0 +1,158 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+.container{
+    padding-left:15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:768px){
+.container{
+    width: 750px;
+}
+}
+@media(min-width:992px){
+.container{
+    width:970px
+}
+}
+@media(min-width:1200px){
+.container{
+    width: 1170px;
+}
+}
+.perfume{
+    background-color: #f3eae3;
+    height: 100vh;
+    position: relative;
+}
+@media(max-width:767px){
+    .perfume{
+        padding: 50px 0px;
+    }
+}
+.perfume .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    border-radius: 10px;
+    width: 600px;
+    max-width: 100%;
+    transition: 0.5s;
+}
+.perfume .container:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 12px 20px 0px, rgba(0, 0, 0, 0.23) 0px 2px 4px 0px;
+}
+@media(max-width:767px){
+    .perfume .container{
+    flex-direction: column;
+    width: 360px;
+    padding: 0px 5px;
+}
+}
+.perfume img:first-child{
+    display: flex;
+    width: 300px;
+    max-width: 100%;
+    left: -15px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@media(max-width:767px){
+    .perfume .container .image img{
+        display: none;
+    }
+}
+.perfume .container .image .mobile{
+    display: none;
+}
+@media(max-width:767px){
+    .perfume .container .image .mobile{
+        display: block;
+        width: 370px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+.perfume .box{
+    flex: 50%;
+    margin-left: 15px;
+}
+.perfume .box h3{
+    color: #666666;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+.perfume .box h1{
+    font-size: 45px;
+    letter-spacing: -0.7px;
+    line-height: 1;
+    margin-top: -5px;
+}
+.perfume .box p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #666666;
+}
+.perfume .box .span {
+    margin: 15px auto;
+}
+.perfume .box .span span:first-child{
+    color: #339966;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'FontAwesome';
+}
+.perfume .box .span span:last-child{
+    color: #666666;
+    text-decoration-line: line-through;
+    margin: auto 20px;
+    position: relative;
+    top: -7px;
+    font-size: 14px;
+}
+.perfume .box a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: #339966;
+    display: block;
+    width: fit-content;
+    padding: 15px 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s;
+    bottom: -10px
+}
+.perfume .box a::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f07a';
+    position: absolute;
+    left: 45px;
+    font-weight: 900;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.perfume .box a:hover{
+    background-color: #0b3620;
+}
+@media(max-width:767px){
+    .perfume .box a{
+        bottom: 0px;
+    }
+}
